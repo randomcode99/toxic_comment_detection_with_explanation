@@ -7,7 +7,7 @@ from lime import lime_text
 st.title("Toxic Comment Classifier")
 
 def load_model():
-    return (tf.keras.models.load_model(filepath="toxicity_Embedding_Dropout_BiLSTM64_Dense128_Dropout_Dense256_Dense128_Dense6_betterembedding.h5")
+    return (tf.keras.models.load_model(filepath="toxicity_Embedding500000x32_Dropout_BiLSTM64_Dense128_Dropout_Dense256_Dense128_Dense6_betteremb.h5")
         , tf.keras.models.load_model(filepath='toxic_comment_vectorizer').layers[0])
 
 model, vectorizer = load_model()
